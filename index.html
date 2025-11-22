@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>SystemicSolvency.com — System-wide solvency & financial stability banner</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-        content="SystemicSolvency.com — descriptive .com banner for systemic solvency, system-wide solvency, financial stability and macroprudential stress-testing." />
+  <title>SystemicSolvency.com — System-wide solvency & financial stability (descriptive banner)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="SystemicSolvency.com — descriptive .com banner for systemic solvency, system-wide solvency, financial stability and macroprudential stress-testing." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
 
   <link rel="canonical" href="https://www.systemicsolvency.com/" />
@@ -14,40 +13,36 @@
   <link rel="alternate" href="https://www.systemicsolvency.com/" hreflang="x-default" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="SystemicSolvency.com — System-wide solvency & financial stability banner" />
-  <meta property="og:description"
-        content="Neutral .com asset for frameworks, dashboards or indices on systemic solvency, macroprudential risk and financial stability." />
+  <meta property="og:title" content="SystemicSolvency.com — System-wide solvency & financial stability" />
+  <meta property="og:description" content="Neutral, descriptive .com domain for frameworks, dashboards or indices on systemic solvency and macroprudential financial stability." />
   <meta property="og:url" content="https://www.systemicsolvency.com/" />
   <meta property="og:image" content="https://www.systemicsolvency.com/og.jpg" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="SystemicSolvency.com — System-wide solvency & financial stability" />
-  <meta name="twitter:description"
-        content="Descriptive digital asset for systemic solvency, system-wide solvency and macroprudential stress-testing." />
+  <meta name="twitter:description" content="Descriptive digital asset for systemic solvency, system-wide solvency and macroprudential stress-testing." />
   <meta name="twitter:image" content="https://www.systemicsolvency.com/og.jpg" />
 
   <style>
     :root {
       --bg: #020b1f;
-      --bg-alt: #060f2c;
+      --bg-soft: #07102b;
+      --bg-card: #050b21;
+      --border-soft: #202a4a;
       --accent: #f4c15d;
       --accent-soft: #f8d690;
       --text-main: #f5f7ff;
       --text-soft: #c8cde5;
-      --border-soft: #202a4a;
-      --pill-bg: #0e1734;
-      --danger: #ffb3b3;
+      --pill: #0d1735;
       --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
       padding: 0;
-      background: radial-gradient(circle at top, #101a3b 0, var(--bg) 55%);
+      background: radial-gradient(circle at top, #121c3b 0, var(--bg) 55%);
       color: var(--text-main);
       font-family: var(--font-main);
       -webkit-font-smoothing: antialiased;
@@ -55,96 +50,87 @@
 
     body {
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
 
     .page {
-      max-width: 1120px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 24px 16px 40px;
+      padding: 24px 18px 40px;
     }
 
     header {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       gap: 16px;
-      margin-bottom: 32px;
+      margin-bottom: 24px;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
 
     .brand-logo {
-      height: 40px;
       width: 40px;
+      height: 40px;
       border-radius: 12px;
-      background: radial-gradient(circle at 30% 20%, #ffe6ff 0, #f2b3ff 32%, #b37dff 70%, #4b2a80 100%);
       overflow: hidden;
+      background: #1b2545;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
     .brand-logo img {
+      display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
     }
 
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .brand-name {
-      font-size: 1.1rem;
+    .brand-title {
+      font-size: 1rem;
       font-weight: 600;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
     }
 
-    .brand-tagline {
-      font-size: 0.8rem;
+    .brand-sub {
+      font-size: 0.78rem;
       color: var(--text-soft);
     }
 
     .lang-toggle {
       display: inline-flex;
       align-items: center;
-      border-radius: 999px;
       padding: 2px;
-      background: var(--pill-bg);
+      border-radius: 999px;
       border: 1px solid var(--border-soft);
+      background: var(--pill);
       font-size: 0.8rem;
     }
 
     .lang-toggle button {
       border: none;
-      border-radius: 999px;
-      padding: 6px 14px;
       background: transparent;
       color: var(--text-soft);
+      padding: 6px 14px;
+      border-radius: 999px;
       cursor: pointer;
       font: inherit;
-      transition: background 0.15s ease, color 0.15s ease;
     }
 
     .lang-toggle button.active {
-      background: #ffffff10;
+      background: #ffffff12;
       color: #ffffff;
     }
 
     main {
       display: grid;
-      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
-      gap: 32px;
+      grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.2fr);
+      gap: 24px;
     }
 
     @media (max-width: 880px) {
@@ -153,14 +139,14 @@
       }
     }
 
-    .pill {
+    .badge {
       display: inline-flex;
       align-items: center;
       gap: 6px;
       padding: 4px 10px;
       border-radius: 999px;
-      background: var(--pill-bg);
       border: 1px solid var(--border-soft);
+      background: var(--pill);
       color: var(--accent-soft);
       font-size: 0.76rem;
       text-transform: uppercase;
@@ -168,9 +154,9 @@
     }
 
     .hero-title {
+      margin: 14px 0 10px;
       font-size: clamp(1.9rem, 2.4vw, 2.3rem);
       line-height: 1.2;
-      margin: 14px 0 10px;
     }
 
     .hero-highlight {
@@ -185,7 +171,7 @@
       max-width: 640px;
     }
 
-    .hero-actions {
+    .actions {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
@@ -195,10 +181,9 @@
     .btn {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
       gap: 8px;
-      border-radius: 999px;
       padding: 9px 16px;
+      border-radius: 999px;
       font-size: 0.9rem;
       font-weight: 500;
       text-decoration: none;
@@ -209,67 +194,71 @@
     .btn-primary {
       background: linear-gradient(135deg, var(--accent), var(--accent-soft));
       color: #1a1730;
-      border-color: transparent;
     }
 
     .btn-secondary {
       background: transparent;
-      color: var(--text-soft);
       border-color: var(--border-soft);
+      color: var(--text-soft);
     }
 
-    .btn span.icon {
-      font-size: 1.06rem;
+    .btn .icon {
+      font-size: 1.05rem;
       line-height: 1;
     }
 
-    .notice-legal {
-      margin-top: 16px;
+    .legal-note {
+      margin-top: 14px;
       font-size: 0.8rem;
       color: var(--text-soft);
       border-left: 2px solid var(--border-soft);
       padding-left: 10px;
     }
 
-    .panel {
-      background: linear-gradient(145deg, #050c24, #030618);
-      border-radius: 14px;
-      border: 1px solid var(--border-soft);
-      padding: 14px 14px 16px;
-      margin-bottom: 14px;
+    .side {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
     }
 
-    .panel-title {
-      font-size: 0.9rem;
+    .card {
+      background: var(--bg-card);
+      border-radius: 14px;
+      border: 1px solid var(--border-soft);
+      padding: 14px 14px 15px;
+    }
+
+    .card-title {
+      font-size: 0.92rem;
       font-weight: 600;
       margin-bottom: 6px;
     }
 
-    .panel-text {
+    .card-text {
       font-size: 0.84rem;
       color: var(--text-soft);
       line-height: 1.5;
     }
 
-    .panel-list {
+    .card-list {
+      margin: 6px 0 0;
+      padding-left: 16px;
       font-size: 0.84rem;
       color: var(--text-soft);
-      padding-left: 16px;
-      margin: 6px 0 0;
     }
 
-    .panel-list li {
+    .card-list li {
       margin: 2px 0;
     }
 
-    .solvency-arch {
+    .chips {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
       margin-top: 6px;
     }
 
-    .solvency-chip {
+    .chip {
       font-size: 0.78rem;
       padding: 4px 9px;
       border-radius: 999px;
@@ -281,34 +270,29 @@
     }
 
     footer {
+      margin-top: 30px;
+      padding-top: 12px;
       border-top: 1px solid var(--border-soft);
-      margin-top: 32px;
-      padding-top: 14px;
       font-size: 0.78rem;
       color: var(--text-soft);
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
+      flex-wrap: wrap;
       gap: 8px;
     }
 
-    a.footer-link {
+    .footer-link {
       color: var(--text-soft);
       text-decoration: none;
     }
 
-    a.footer-link:hover {
+    .footer-link:hover {
       text-decoration: underline;
     }
 
-    /* language containers */
-    [data-lang-block] {
-      display: none;
-    }
-
-    [data-lang-block].active {
-      display: block;
-    }
+    /* blocs langue */
+    [data-lang-block] { display: none; }
+    [data-lang-block].active { display: block; }
   </style>
 </head>
 <body>
@@ -318,9 +302,9 @@
         <div class="brand-logo">
           <img src="logo-systemicsolvency.png" alt="SystemicSolvency.com logo">
         </div>
-        <div class="brand-text">
-          <div class="brand-name">SystemicSolvency.com</div>
-          <div class="brand-tagline">System-wide solvency &amp; financial stability (descriptive banner)</div>
+        <div>
+          <div class="brand-title">SYSTEMICSOLVENCY.COM</div>
+          <div class="brand-sub">System-wide solvency &amp; financial stability (descriptive banner)</div>
         </div>
       </div>
 
@@ -331,13 +315,11 @@
     </header>
 
     <main>
-      <!-- LEFT COLUMN: HERO + LEGAL -->
-      <section id="hero">
-        <!-- EN HERO -->
+      <!-- COLONNE GAUCHE : HERO -->
+      <section>
+        <!-- HERO EN -->
         <div data-lang-block="en" class="active">
-          <div class="pill">
-            <span>Descriptive domain · Neutral banner</span>
-          </div>
+          <div class="badge">Descriptive domain · Neutral banner</div>
           <h1 class="hero-title">
             A banner for <span class="hero-highlight">systemic solvency</span> and system-wide financial stability.
           </h1>
@@ -346,7 +328,7 @@
             that connect climate &amp; planetary boundaries, macroprudential stress-testing and
             financial stability at system level.
           </p>
-          <div class="hero-actions">
+          <div class="actions">
             <a class="btn btn-primary" href="Acquisition%20Brief%20systemicsolvency-EN-202511.pdf" target="_blank" rel="noopener">
               <span class="icon">⬇</span>
               <span>Download Acquisition Brief (EN, PDF)</span>
@@ -356,18 +338,16 @@
               <span>Contact the seller</span>
             </a>
           </div>
-          <p class="notice-legal">
+          <p class="legal-note">
             SystemicSolvency.com is a <strong>descriptive domain name only</strong>.
-            No investment advice, no rating, no regulated services are provided.
-            All examples on this page and in the brief are <strong>illustrative only</strong>.
+            No investment advice, rating, banking, insurance, regtech or asset-management
+            services are provided. All examples here and in the brief are <strong>illustrative only</strong>.
           </p>
         </div>
 
-        <!-- FR HERO -->
+        <!-- HERO FR -->
         <div data-lang-block="fr">
-          <div class="pill">
-            <span>Nom de domaine descriptif · Bannière neutre</span>
-          </div>
+          <div class="badge">Nom de domaine descriptif · Bannière neutre</div>
           <h1 class="hero-title">
             Une bannière pour la <span class="hero-highlight">solvabilité systémique</span> et la stabilité financière.
           </h1>
@@ -376,7 +356,7 @@
             ou index qui relient limites planétaires &amp; climat, stress-tests macro-prudentiels
             et stabilité financière à l’échelle du système.
           </p>
-          <div class="hero-actions">
+          <div class="actions">
             <a class="btn btn-primary" href="Acquisition%20Brief%20systemicsolvency-202511.pdf" target="_blank" rel="noopener">
               <span class="icon">⬇</span>
               <span>Télécharger l’Acquisition Brief (FR, PDF)</span>
@@ -386,31 +366,32 @@
               <span>Contacter le cédant</span>
             </a>
           </div>
-          <p class="notice-legal">
+          <p class="legal-note">
             SystemicSolvency.com est un <strong>nom de domaine descriptif</strong> uniquement.
-            Aucun conseil en investissement, aucune notation, aucun service régulé n’est fourni.
-            Tous les exemples figurant sur cette page et dans le brief sont <strong>strictement illustratifs</strong>.
+            Aucun conseil en investissement, aucune notation, aucun service bancaire, assurantiel,
+            de regtech ou de gestion d’actifs n’est fourni. Tous les exemples sont
+            <strong>strictement illustratifs</strong>.
           </p>
         </div>
       </section>
 
-      <!-- RIGHT COLUMN: CONTEXT + USES + ARCHITECTURE -->
-      <aside>
-        <!-- EN BLOCKS -->
+      <!-- COLONNE DROITE : CARTES CONTEXTE / USAGES / ARCHI -->
+      <aside class="side">
+        <!-- EN CARTES -->
         <div data-lang-block="en" class="active">
-          <div class="panel">
-            <div class="panel-title">What is “systemic solvency”?</div>
-            <div class="panel-text">
-              It is the ability of the <strong>financial system as a whole</strong> to remain solvent
+          <div class="card">
+            <div class="card-title">What is “systemic solvency”?</div>
+            <div class="card-text">
+              The ability of the <strong>financial system as a whole</strong> to remain solvent
               under correlated shocks, contagion and long-horizon structural risks:
-              climate &amp; transition, planetary boundaries, macro-economic stress,
-              and technology-driven vulnerabilities.
+              climate &amp; transition, planetary boundaries, macro-economic stress and
+              technology-driven vulnerabilities.
             </div>
           </div>
 
-          <div class="panel">
-            <div class="panel-title">Illustrative use cases (non-binding)</div>
-            <ul class="panel-list">
+          <div class="card">
+            <div class="card-title">Illustrative use cases (non-binding)</div>
+            <ul class="card-list">
               <li>Systemic Solvency Dashboard for supervisors or research teams.</li>
               <li>System-wide solvency index by a data / analytics provider.</li>
               <li>Group-wide “Systemic Solvency Framework” for a global bank or reinsurer.</li>
@@ -419,9 +400,9 @@
             </ul>
           </div>
 
-          <div class="panel">
-            <div class="panel-title">Who could use this domain? (examples)</div>
-            <ul class="panel-list">
+          <div class="card">
+            <div class="card-title">Who could use this domain? (examples)</div>
+            <ul class="card-list">
               <li>Central banks &amp; macro-prudential authorities.</li>
               <li>Prudential supervisors (banking, insurance, market infrastructures).</li>
               <li>International financial institutions.</li>
@@ -431,51 +412,51 @@
             </ul>
           </div>
 
-          <div class="panel">
-            <div class="panel-title">Solvency architecture (related domains)</div>
-            <div class="panel-text">
-              SystemicSolvency.com can sit above a broader “Solvency” architecture, from
-              planetary boundaries to sectoral and system-wide solvency:
+          <div class="card">
+            <div class="card-title">Solvency architecture (related domains)</div>
+            <div class="card-text">
+              SystemicSolvency.com can sit above a broader “Solvency” architecture,
+              from planetary boundaries to sectoral and system-wide solvency:
             </div>
-            <div class="solvency-arch">
-              <a class="solvency-chip" href="https://www.planetarysolvency.com" target="_blank" rel="noopener">PlanetarySolvency.com</a>
-              <a class="solvency-chip" href="https://www.climatesolvency.com" target="_blank" rel="noopener">ClimateSolvency.com</a>
-              <a class="solvency-chip" href="https://www.watersolvency.com" target="_blank" rel="noopener">WaterSolvency.com</a>
-              <a class="solvency-chip" href="https://www.energysolvency.com" target="_blank" rel="noopener">EnergySolvency.com</a>
-              <a class="solvency-chip" href="https://www.naturesolvency.com" target="_blank" rel="noopener">NatureSolvency.com</a>
-              <a class="solvency-chip" href="https://www.oceansolvency.com" target="_blank" rel="noopener">OceanSolvency.com</a>
-              <a class="solvency-chip" href="https://www.biospheresolvency.com" target="_blank" rel="noopener">BiosphereSolvency.com</a>
-              <a class="solvency-chip" href="https://www.computesolvency.com" target="_blank" rel="noopener">ComputeSolvency.com</a>
+            <div class="chips">
+              <a class="chip" href="https://www.planetarysolvency.com" target="_blank" rel="noopener">PlanetarySolvency.com</a>
+              <a class="chip" href="https://www.climatesolvency.com" target="_blank" rel="noopener">ClimateSolvency.com</a>
+              <a class="chip" href="https://www.watersolvency.com" target="_blank" rel="noopener">WaterSolvency.com</a>
+              <a class="chip" href="https://www.energysolvency.com" target="_blank" rel="noopener">EnergySolvency.com</a>
+              <a class="chip" href="https://www.naturesolvency.com" target="_blank" rel="noopener">NatureSolvency.com</a>
+              <a class="chip" href="https://www.oceansolvency.com" target="_blank" rel="noopener">OceanSolvency.com</a>
+              <a class="chip" href="https://www.biospheresolvency.com" target="_blank" rel="noopener">BiosphereSolvency.com</a>
+              <a class="chip" href="https://www.computesolvency.com" target="_blank" rel="noopener">ComputeSolvency.com</a>
             </div>
           </div>
         </div>
 
-        <!-- FR BLOCKS -->
+        <!-- FR CARTES -->
         <div data-lang-block="fr">
-          <div class="panel">
-            <div class="panel-title">Qu’appelle-t-on « solvabilité systémique » ?</div>
-            <div class="panel-text">
-              C’est la capacité du <strong>système financier dans son ensemble</strong> à rester solvable
+          <div class="card">
+            <div class="card-title">Qu’appelle-t-on « solvabilité systémique » ?</div>
+            <div class="card-text">
+              La capacité du <strong>système financier dans son ensemble</strong> à rester solvable
               face à des chocs corrélés, de la contagion et des risques structurels de long terme :
-              climat &amp; transition, limites planétaires, tensions macro-économiques,
-              vulnérabilités technologiques et d’infrastructures.
+              climat &amp; transition, limites planétaires, tensions macro-économiques
+              et vulnérabilités technologiques.
             </div>
           </div>
 
-          <div class="panel">
-            <div class="panel-title">Cas d’usage potentiels (illustratifs)</div>
-            <ul class="panel-list">
+          <div class="card">
+            <div class="card-title">Cas d’usage potentiels (illustratifs)</div>
+            <ul class="card-list">
               <li>Dashboard « Systemic Solvency » pour autorités ou équipes de recherche.</li>
-              <li>Index de risque systémique construit par un fournisseur de données.</li>
+              <li>Index de solvabilité systémique construit par un fournisseur de données.</li>
               <li>Programme groupe « Systemic Solvency Framework » pour banque ou réassureur global.</li>
               <li>Chaire académique ou think tank sur les risques systémiques.</li>
               <li>Plateforme de scénarios reliant climat, limites planétaires et stress-tests macro-prudentiels.</li>
             </ul>
           </div>
 
-          <div class="panel">
-            <div class="panel-title">Qui pourrait utiliser ce domaine ? (exemples)</div>
-            <ul class="panel-list">
+          <div class="card">
+            <div class="card-title">Qui pourrait utiliser ce domaine ? (exemples)</div>
+            <ul class="card-list">
               <li>Banques centrales &amp; autorités macro-prudentielles.</li>
               <li>Superviseurs prudentiels (banques, assurances, infrastructures de marché).</li>
               <li>Institutions financières internationales.</li>
@@ -485,21 +466,21 @@
             </ul>
           </div>
 
-          <div class="panel">
-            <div class="panel-title">Architecture Solvency (domaines associés)</div>
-            <div class="panel-text">
-              SystemicSolvency.com peut coiffer une architecture « Solvency » plus large, des limites
-              planétaires jusqu’à la solvabilité du système financier :
+          <div class="card">
+            <div class="card-title">Architecture « Solvency » (domaines associés)</div>
+            <div class="card-text">
+              SystemicSolvency.com peut coiffer une architecture « Solvency » plus large,
+              des limites planétaires jusqu’à la solvabilité du système financier :
             </div>
-            <div class="solvency-arch">
-              <a class="solvency-chip" href="https://www.planetarysolvency.com" target="_blank" rel="noopener">PlanetarySolvency.com</a>
-              <a class="solvency-chip" href="https://www.climatesolvency.com" target="_blank" rel="noopener">ClimateSolvency.com</a>
-              <a class="solvency-chip" href="https://www.watersolvency.com" target="_blank" rel="noopener">WaterSolvency.com</a>
-              <a class="solvency-chip" href="https://www.energysolvency.com" target="_blank" rel="noopener">EnergySolvency.com</a>
-              <a class="solvency-chip" href="https://www.naturesolvency.com" target="_blank" rel="noopener">NatureSolvency.com</a>
-              <a class="solvency-chip" href="https://www.oceansolvency.com" target="_blank" rel="noopener">OceanSolvency.com</a>
-              <a class="solvency-chip" href="https://www.biospheresolvency.com" target="_blank" rel="noopener">BiosphereSolvency.com</a>
-              <a class="solvency-chip" href="https://www.computesolvency.com" target="_blank" rel="noopener">ComputeSolvency.com</a>
+            <div class="chips">
+              <a class="chip" href="https://www.planetarysolvency.com" target="_blank" rel="noopener">PlanetarySolvency.com</a>
+              <a class="chip" href="https://www.climatesolvency.com" target="_blank" rel="noopener">ClimateSolvency.com</a>
+              <a class="chip" href="https://www.watersolvency.com" target="_blank" rel="noopener">WaterSolvency.com</a>
+              <a class="chip" href="https://www.energysolvency.com" target="_blank" rel="noopener">EnergySolvency.com</a>
+              <a class="chip" href="https://www.naturesolvency.com" target="_blank" rel="noopener">NatureSolvency.com</a>
+              <a class="chip" href="https://www.oceansolvency.com" target="_blank" rel="noopener">OceanSolvency.com</a>
+              <a class="chip" href="https://www.biospheresolvency.com" target="_blank" rel="noopener">BiosphereSolvency.com</a>
+              <a class="chip" href="https://www.computesolvency.com" target="_blank" rel="noopener">ComputeSolvency.com</a>
             </div>
           </div>
         </div>
@@ -507,53 +488,37 @@
     </main>
 
     <footer>
-      <div>
-        © SystemicSolvency.com — descriptive digital asset. No regulated services provided.
-      </div>
-      <div>
-        <a class="footer-link" href="mailto:contact@systemicsolvency.com">contact@systemicsolvency.com</a>
-      </div>
+      <div>© SystemicSolvency.com — descriptive digital asset. No regulated services provided.</div>
+      <div><a class="footer-link" href="mailto:contact@systemicsolvency.com">contact@systemicsolvency.com</a></div>
     </footer>
   </div>
 
   <script>
-    (function() {
-      const buttons = document.querySelectorAll('[data-lang-btn]');
-      const blocks = document.querySelectorAll('[data-lang-block]');
+    (function () {
+      const btns = document.querySelectorAll("[data-lang-btn]");
+      const blocks = document.querySelectorAll("[data-lang-block]");
 
       function setLang(lang) {
-        buttons.forEach(btn => {
-          btn.classList.toggle('active', btn.dataset.langBtn === lang);
-        });
-        blocks.forEach(block => {
-          block.classList.toggle('active', block.getAttribute('data-lang-block') === lang);
-        });
-        if (lang === 'fr') {
-          const url = new URL(window.location.href);
-          url.searchParams.set('lang', 'fr');
-          window.history.replaceState({}, '', url.toString());
+        btns.forEach(b => b.classList.toggle("active", b.dataset.langBtn === lang));
+        blocks.forEach(bl => bl.classList.toggle("active", bl.getAttribute("data-lang-block") === lang));
+
+        const url = new URL(window.location.href);
+        if (lang === "fr") {
+          url.searchParams.set("lang", "fr");
         } else {
-          const url = new URL(window.location.href);
-          url.searchParams.delete('lang');
-          window.history.replaceState({}, '', url.toString());
+          url.searchParams.delete("lang");
         }
+        window.history.replaceState({}, "", url.toString());
       }
 
-      buttons.forEach(btn => {
-        btn.addEventListener('click', () => setLang(btn.dataset.langBtn));
-      });
+      btns.forEach(b => b.addEventListener("click", () => setLang(b.dataset.langBtn)));
 
-      // initial lang from URL ?lang=fr
       try {
         const url = new URL(window.location.href);
-        const langParam = url.searchParams.get('lang');
-        if (langParam === 'fr') {
-          setLang('fr');
-        } else {
-          setLang('en');
-        }
+        const p = url.searchParams.get("lang");
+        setLang(p === "fr" ? "fr" : "en");
       } catch (e) {
-        setLang('en');
+        setLang("en");
       }
     })();
   </script>
