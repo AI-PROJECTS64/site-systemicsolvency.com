@@ -123,18 +123,6 @@
       padding:26px;
       box-shadow:var(--shadow)
     }
-    .hero{
-      display:grid;
-      grid-template-columns:repeat(12,1fr);
-      gap:18px;
-      align-items:flex-start;
-    }
-    .hero-main{grid-column:span 7}
-    .hero-side{grid-column:span 5}
-    @media (max-width:860px){
-      .hero{grid-template-columns:repeat(12,1fr)}
-      .hero-main,.hero-side{grid-column:span 12}
-    }
     .hero h1{
       margin:0 0 8px;
       font-size:44px;
@@ -195,13 +183,16 @@
       opacity:.97;
       border-radius:14px
     }
+    .ico{width:16px;height:16px;display:inline-block;vertical-align:middle}
     .legal-note{
       margin-top:10px;
       font-size:13px;
       color:var(--muted);
     }
-    .ico{width:16px;height:16px;display:inline-block;vertical-align:middle}
-    .section-title{margin-top:0;margin-bottom:8px}
+    @media (max-width:860px){
+      .col-6{grid-column:span 12}
+      .hero h1{font-size:34px}
+    }
   </style>
 </head>
 <body>
@@ -217,63 +208,45 @@
       </div>
     </div>
 
-    <!-- ============== HERO FR ============== -->
+    <!-- ============ HERO FR ============ -->
     <section class="card hero" data-fr hidden>
-      <div class="hero-main">
-        <h1>SystemicSolvency.com</h1>
-        <img class="logo" src="/logo-systemicsolvency.png" alt="SystemicSolvency.com" loading="eager">
-        <p class="muted">
-          Nom de domaine <b>descriptif</b> pour la notion de <b>« systemic solvency »</b> :
-          la capacité du <b>système financier dans son ensemble</b> à rester solvable et
-          stable face à des chocs corrélés, des dynamiques de contagion et des risques
-          structurels de long terme (climat, limites planétaires, transition, risques
-          macroéconomiques et technologiques).<br>
-          Conçu comme <b>bannière neutre</b> pour des cadres « Systemic Solvency Framework »,
-          des stress-tests macroprudentiels intégrant climat &amp; nature, des index
-          de solvabilité systémique et des observatoires reliant <b>limites planétaires</b>,
-          <b>stabilité financière</b> et <b>solvabilité d’ensemble</b>.<br>
-          Ce nom permet de sécuriser un <b>monopole sémantique crédible</b> sur « Systemic Solvency »
-          auprès de banques centrales, superviseurs, institutions financières internationales,
-          banques et réassureurs systémiques, ainsi que fournisseurs d’indices et de données.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="mailto:contact@systemicsolvency.com?subject=SystemicSolvency.com%20-%20NDA%20%2F%20Proposition&body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20obtenir%20votre%20NDA%20et%2Fou%20proposer%20une%20offre%20pour%20SystemicSolvency.com.%0D%0AEntreprise%20%3A%20%0D%0ANom%20%2F%20Fonction%20%3A%20%0D%0AUsage%20pr%C3%A9vu%20%3A%20%0D%0ABudget%20indicatif%20%3A%20%0D%0A%0D%0ACordialement%2C">
-            Proposer une offre / Demander un NDA
-          </a>
-          <a class="btn" href="#value-fr">Pourquoi ce nom ?</a>
-          <a class="btn" href="https://www.linkedin.com/company/systemicsolvency" target="_blank" rel="noopener" aria-label="Ouvrir la page LinkedIn SystemicSolvency">
-            <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5z"/>
-            </svg>
-            LinkedIn
-          </a>
-        </div>
-        <p class="legal-note">
-          <b>Nota :</b> SystemicSolvency.com est un <b>actif sémantique descriptif</b>.
-          Il ne constitue ni une agence de notation, ni un régulateur, ni une banque centrale,
-          ni un service réglementé. Aucun conseil juridique, financier, prudentiel, monétaire
-          ou fiscal n’est fourni. Tous les exemples d’usage sont strictement <b>illustratifs</b>.
-        </p>
+      <h1>SystemicSolvency.com</h1>
+      <img class="logo" src="/logo-systemicsolvency.png" alt="SystemicSolvency.com" loading="eager">
+      <p class="muted">
+        Nom de domaine <b>descriptif</b> pour la notion de <b>« systemic solvency »</b> :
+        la capacité du <b>système financier dans son ensemble</b> à rester solvable et
+        stable face à des chocs corrélés, des dynamiques de contagion et des risques
+        structurels de long terme (climat, limites planétaires, transition, risques
+        macroéconomiques et technologiques).<br>
+        Conçu comme <b>bannière neutre</b> pour des cadres « Systemic Solvency Framework »,
+        des stress-tests macroprudentiels intégrant climat &amp; nature, des index de
+        solvabilité systémique et des observatoires reliant <b>limites planétaires</b>,
+        <b>stabilité financière</b> et <b>solvabilité d’ensemble</b>.<br>
+        Ce nom permet de sécuriser un <b>monopole sémantique crédible</b> sur « Systemic Solvency »
+        auprès de banques centrales, superviseurs, institutions financières internationales,
+        banques et réassureurs systémiques, ainsi que fournisseurs d’indices et de données.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:contact@systemicsolvency.com?subject=SystemicSolvency.com%20-%20NDA%20%2F%20Proposition&body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20obtenir%20votre%20NDA%20et%2Fou%20proposer%20une%20offre%20pour%20SystemicSolvency.com.%0D%0AEntreprise%20%3A%20%0D%0ANom%20%2F%20Fonction%20%3A%20%0D%0AUsage%20pr%C3%A9vu%20%3A%20%0D%0ABudget%20indicatif%20%3A%20%0D%0A%0D%0ACordialement%2C">
+          Proposer une offre / Demander un NDA
+        </a>
+        <a class="btn" href="#value-fr">Pourquoi ce nom ?</a>
+        <a class="btn" href="https://www.linkedin.com/company/systemicsolvency" target="_blank" rel="noopener" aria-label="Ouvrir la page LinkedIn SystemicSolvency">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5z"/>
+          </svg>
+          LinkedIn
+        </a>
       </div>
-      <div class="hero-side">
-        <h3 class="section-title">Positionnement « Board &amp; macroprudential »</h3>
-        <p class="muted">
-          Pour de nombreuses institutions, la question n’est plus seulement
-          « nos entités sont-elles solvables ? », mais
-          <b>« le système dont nous dépendons reste-t-il solvable ? »</b><br>
-          SystemicSolvency.com fournit un langage simple pour relier :
-        </p>
-        <div class="list">
-          <span class="chip">Solvabilité systémique &amp; contagion</span>
-          <span class="chip">Stabilité financière &amp; macroprudence</span>
-          <span class="chip">Climat, nature &amp; limites planétaires</span>
-          <span class="chip">Stress-tests de long terme</span>
-          <span class="chip">Indices &amp; observatoires de risque systémique</span>
-        </div>
-      </div>
+      <p class="legal-note">
+        <b>Nota :</b> SystemicSolvency.com est un <b>actif sémantique descriptif</b>.
+        Il ne constitue ni une agence de notation, ni un régulateur, ni une banque centrale,
+        ni un service réglementé. Aucun conseil juridique, financier, prudentiel, monétaire
+        ou fiscal n’est fourni. Tous les exemples d’usage sont strictement <b>illustratifs</b>.
+      </p>
     </section>
 
-    <!-- ============== VALUE FR ============== -->
+    <!-- ============ VALUE FR ============ -->
     <section id="value-fr" class="card" style="margin-top:16px" data-fr hidden>
       <div class="grid">
         <div class="col-6">
@@ -303,7 +276,7 @@
       </p>
     </section>
 
-    <!-- ============== ACTIFS ASSOCIÉS FR ============== -->
+    <!-- ============ RELATED FR ============ -->
     <section class="card" style="margin-top:16px" data-fr hidden>
       <h3>Actifs associés (architecture « Solvency »)</h3>
       <p class="muted">
@@ -327,20 +300,7 @@
       </p>
     </section>
 
-    <!-- ============== ACQUISITION FR ============== -->
-    <section class="card" style="margin-top:16px" data-fr hidden>
-      <h3>Acquisition (process sécurisé)</h3>
-      <p class="muted">
-        Process type : NDA &rarr; échanges stratégiques &rarr; offre formelle &rarr; escrow &rarr; transfert du domaine.
-        L’actif cédé est exclusivement le nom de domaine SystemicSolvency.com, sans services d’audit,
-        de modélisation, de conseil ou de régulation.
-      </p>
-      <a class="btn primary" href="mailto:contact@systemicsolvency.com?subject=SystemicSolvency.com%20-%20NDA%20%2F%20Proposition">
-        Contact direct : contact@systemicsolvency.com
-      </a>
-    </section>
-
-    <!-- ============== DOCS FR ============== -->
+    <!-- ============ DOCS FR ============ -->
     <section class="card" style="margin-top:16px" data-fr hidden>
       <h3>Documents / Briefs</h3>
       <p class="muted">
@@ -358,63 +318,44 @@
       </div>
     </section>
 
-    <!-- ============== HERO EN ============== -->
+    <!-- ============ HERO EN ============ -->
     <section class="card hero" data-en>
-      <div class="hero-main">
-        <h1>SystemicSolvency.com</h1>
-        <img class="logo" src="/logo-systemicsolvency.png" alt="SystemicSolvency.com" loading="eager">
-        <p class="muted">
-          <b>Descriptive .com domain</b> for the concept of <b>“systemic solvency”</b>:
-          the ability of the <b>financial system as a whole</b> to remain solvent and stable
-          under correlated shocks, contagion dynamics and long-horizon structural risks
-          (climate, planetary boundaries, transition, macro-economic and technology risks).<br>
-          Designed as a <b>neutral banner</b> for “Systemic Solvency Frameworks”, macroprudential
-          stress-testing programmes, systemic solvency indices and observatories linking
-          <b>planetary boundaries</b>, <b>financial stability</b> and <b>system-wide solvency</b>.<br>
-          It offers a credible <b>semantic monopoly</b> on the phrase “Systemic Solvency”
-          for central banks, supervisors, international financial institutions, global banks
-          and reinsurers, as well as data and index providers.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="mailto:contact@systemicsolvency.com?subject=SystemicSolvency.com%20-%20NDA%20%2F%20Offer&body=Hello%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20your%20NDA%20and%2For%20submit%20an%20offer%20for%20SystemicSolvency.com.%0D%0ACompany%3A%20%0D%0AName%20%2F%20Role%3A%20%0D%0AIntended%20use%3A%20%0D%0ABudget%20range%3A%20%0D%0ABest%2C">
-            Submit an offer / Request NDA
-          </a>
-          <!-- Bouton Concept Note, EN uniquement -->
-          <a class="btn" href="/concept-note.html">Concept Note</a>
-          <a class="btn" href="#value-en">Why this name?</a>
-          <a class="btn" href="https://www.linkedin.com/company/systemicsolvency" target="_blank" rel="noopener" aria-label="Open SystemicSolvency on LinkedIn">
-            <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5z"/>
-            </svg>
-            LinkedIn
-          </a>
-        </div>
-        <p class="legal-note">
-          <b>Note:</b> SystemicSolvency.com is a <b>descriptive semantic asset</b>.
-          It is not a rating agency, not a regulator, not a central bank and not a regulated
-          financial service. No legal, financial, prudential, monetary or tax advice is provided.
-          All use-case examples are strictly <b>illustrative</b>.
-        </p>
+      <h1>SystemicSolvency.com</h1>
+      <img class="logo" src="/logo-systemicsolvency.png" alt="SystemicSolvency.com" loading="eager">
+      <p class="muted">
+        <b>Descriptive .com domain</b> for the concept of <b>“systemic solvency”</b>:
+        the ability of the <b>financial system as a whole</b> to remain solvent and stable
+        under correlated shocks, contagion dynamics and long-horizon structural risks
+        (climate, planetary boundaries, transition, macro-economic and technology risks).<br>
+        Designed as a <b>neutral banner</b> for “Systemic Solvency Frameworks”, macroprudential
+        stress-testing programmes, systemic solvency indices and observatories linking
+        <b>planetary boundaries</b>, <b>financial stability</b> and <b>system-wide solvency</b>.<br>
+        It offers a credible <b>semantic monopoly</b> on the phrase “Systemic Solvency”
+        for central banks, supervisors, international financial institutions, global banks
+        and reinsurers, as well as data and index providers.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:contact@systemicsolvency.com?subject=SystemicSolvency.com%20-%20NDA%20%2F%20Offer&body=Hello%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20your%20NDA%20and%2For%20submit%20an%20offer%20for%20SystemicSolvency.com.%0D%0ACompany%3A%20%0D%0AName%20%2F%20Role%3A%20%0D%0AIntended%20use%3A%20%0D%0ABudget%20range%3A%20%0D%0ABest%2C">
+          Submit an offer / Request NDA
+        </a>
+        <a class="btn" href="/concept-note.html">Concept Note</a>
+        <a class="btn" href="#value-en">Why this name?</a>
+        <a class="btn" href="https://www.linkedin.com/company/systemicsolvency" target="_blank" rel="noopener" aria-label="Open SystemicSolvency on LinkedIn">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5z"/>
+          </svg>
+          LinkedIn
+        </a>
       </div>
-      <div class="hero-side">
-        <h3 class="section-title">Board-level &amp; macroprudential framing</h3>
-        <p class="muted">
-          For many institutions, the core question is shifting from
-          “<b>are our entities solvent?</b>” to
-          “<b>is the system we depend on still solvent?</b>”.<br>
-          SystemicSolvency.com provides a simple banner to connect:
-        </p>
-        <div class="list">
-          <span class="chip">System-wide solvency &amp; contagion</span>
-          <span class="chip">Financial stability &amp; macroprudential policy</span>
-          <span class="chip">Climate, nature &amp; planetary boundaries</span>
-          <span class="chip">Long-horizon systemic stress-testing</span>
-          <span class="chip">Systemic risk dashboards &amp; indices</span>
-        </div>
-      </div>
+      <p class="legal-note">
+        <b>Note:</b> SystemicSolvency.com is a <b>descriptive semantic asset</b>.
+        It is not a rating agency, not a regulator, not a central bank and not a regulated
+        financial service. No legal, financial, prudential, monetary or tax advice is provided.
+        All use-case examples are strictly <b>illustrative</b>.
+      </p>
     </section>
 
-    <!-- ============== VALUE EN ============== -->
+    <!-- ============ VALUE EN ============ -->
     <section id="value-en" class="card" style="margin-top:16px" data-en>
       <div class="grid">
         <div class="col-6">
@@ -438,14 +379,14 @@
         </div>
       </div>
       <p class="muted">
-        This site does <b>not</b> sell financial products, indices, ratings, advisory,
-        audits or software: only the <b>SystemicSolvency.com</b> domain name as a descriptive
-        digital asset. The buyer remains fully responsible for frameworks, content,
-        methodologies and regulatory compliance.
+        This site does <b>not</b> sell financial products, indices, ratings, advisory, audits or software:
+        only the <b>SystemicSolvency.com</b> domain name as a descriptive digital asset.
+        The buyer remains fully responsible for frameworks, content, methodologies and
+        regulatory compliance.
       </p>
     </section>
 
-    <!-- ============== RELATED EN ============== -->
+    <!-- ============ RELATED EN ============ -->
     <section class="card" style="margin-top:16px" data-en>
       <h3>Related assets (Solvency architecture)</h3>
       <p class="muted">
@@ -469,7 +410,7 @@
       </p>
     </section>
 
-    <!-- ============== ACQUISITION EN ============== -->
+    <!-- ============ ACQUISITION EN ============ -->
     <section class="card" style="margin-top:16px" data-en>
       <h3>Acquisition (secure process)</h3>
       <p class="muted">
@@ -483,9 +424,9 @@
     </section>
 
     <p class="foot muted">
-      © SystemicSolvency.com — actif numérique descriptif « systemic solvency & financial stability ». Aucune affiliation avec
-      des banques centrales, superviseurs, agences de notation ou organisations publiques. Usage descriptif uniquement.
-      Pas de conseil juridique, financier, monétaire, prudentiel, scientifique ou fiscal.
+      © SystemicSolvency.com — actif numérique descriptif « systemic solvency & financial stability ».
+      Aucune affiliation avec des banques centrales, superviseurs, agences de notation ou organisations publiques.
+      Usage descriptif uniquement. Pas de conseil juridique, financier, monétaire, prudentiel, scientifique ou fiscal.
       — Contact : <a href="mailto:contact@systemicsolvency.com">contact@systemicsolvency.com</a>
     </p>
   </div>
@@ -495,17 +436,21 @@
     const enBtn = document.getElementById('btn-en');
 
     function show(lang){
-      document.querySelectorAll('[data-fr]').forEach(n => n.hidden = (lang !== 'fr'));
-      document.querySelectorAll('[data-en]').forEach(n => n.hidden = (lang !== 'en'));
+      document.querySelectorAll('[data-fr]').forEach(n => {
+        n.hidden = (lang !== 'fr');
+      });
+      document.querySelectorAll('[data-en]').forEach(n => {
+        n.hidden = (lang !== 'en');
+      });
       frBtn.setAttribute('aria-pressed', String(lang === 'fr'));
       enBtn.setAttribute('aria-pressed', String(lang === 'en'));
-      document.documentElement.lang = lang;
+      document.documentElement.lang = (lang === 'fr') ? 'fr' : 'en';
     }
 
     frBtn.addEventListener('click', () => show('fr'));
     enBtn.addEventListener('click', () => show('en'));
 
-    // EN par défaut sur .com
+    // .com → EN par défaut
     show('en');
   </script>
 </body>
