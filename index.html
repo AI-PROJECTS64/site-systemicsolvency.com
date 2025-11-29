@@ -140,11 +140,6 @@
       font-size:44px;
       letter-spacing:.4px
     }
-    .hero-sub{
-      font-size:15px;
-      color:var(--muted);
-      margin-top:4px
-    }
     .cta{
       display:flex;
       gap:12px;
@@ -222,7 +217,7 @@
       </div>
     </div>
 
-    <!-- ================= HERO FR ================= -->
+    <!-- ============== HERO FR ============== -->
     <section class="card hero" data-fr hidden>
       <div class="hero-main">
         <h1>SystemicSolvency.com</h1>
@@ -278,7 +273,7 @@
       </div>
     </section>
 
-    <!-- ================= VALUE FR ================= -->
+    <!-- ============== VALUE FR ============== -->
     <section id="value-fr" class="card" style="margin-top:16px" data-fr hidden>
       <div class="grid">
         <div class="col-6">
@@ -308,7 +303,7 @@
       </p>
     </section>
 
-    <!-- ================= ACTIFS ASSOCIÉS FR (liens cliquables) ================= -->
+    <!-- ============== ACTIFS ASSOCIÉS FR ============== -->
     <section class="card" style="margin-top:16px" data-fr hidden>
       <h3>Actifs associés (architecture « Solvency »)</h3>
       <p class="muted">
@@ -332,7 +327,7 @@
       </p>
     </section>
 
-    <!-- ================= ACQUISITION FR ================= -->
+    <!-- ============== ACQUISITION FR ============== -->
     <section class="card" style="margin-top:16px" data-fr hidden>
       <h3>Acquisition (process sécurisé)</h3>
       <p class="muted">
@@ -345,7 +340,7 @@
       </a>
     </section>
 
-    <!-- ================= DOCS FR ================= -->
+    <!-- ============== DOCS FR ============== -->
     <section class="card" style="margin-top:16px" data-fr hidden>
       <h3>Documents / Briefs</h3>
       <p class="muted">
@@ -363,7 +358,7 @@
       </div>
     </section>
 
-    <!-- ================= HERO EN ================= -->
+    <!-- ============== HERO EN ============== -->
     <section class="card hero" data-en>
       <div class="hero-main">
         <h1>SystemicSolvency.com</h1>
@@ -419,7 +414,7 @@
       </div>
     </section>
 
-    <!-- ================= VALUE EN ================= -->
+    <!-- ============== VALUE EN ============== -->
     <section id="value-en" class="card" style="margin-top:16px" data-en>
       <div class="grid">
         <div class="col-6">
@@ -450,7 +445,7 @@
       </p>
     </section>
 
-    <!-- ================= RELATED EN (liens cliquables) ================= -->
+    <!-- ============== RELATED EN ============== -->
     <section class="card" style="margin-top:16px" data-en>
       <h3>Related assets (Solvency architecture)</h3>
       <p class="muted">
@@ -474,7 +469,7 @@
       </p>
     </section>
 
-    <!-- ================= ACQUISITION EN ================= -->
+    <!-- ============== ACQUISITION EN ============== -->
     <section class="card" style="margin-top:16px" data-en>
       <h3>Acquisition (secure process)</h3>
       <p class="muted">
@@ -510,10 +505,8 @@
     frBtn.addEventListener('click', () => show('fr'));
     enBtn.addEventListener('click', () => show('en'));
 
-    // EN forcé par défaut sur .com
-    (function initLang(){
-      show('en');
-    })();
+    // EN par défaut sur .com
+    show('en');
   </script>
 </body>
 </html>
